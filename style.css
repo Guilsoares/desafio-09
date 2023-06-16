@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --fontePadrao: 'Roboto', sans-serif;
+    --cor01:#EEDFA7;
+    --cor02:#B8A049;
+    --cor03:#6B5D2B;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fontePadrao);
+}
+
+body{
+    background-color: var(--cor01);
+}
+
+header{
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1{
+    font-size: 4pc;
+    font-weight: bold;
+    color: var(--cor03);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor02);
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    margin: 15px auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+}
+
+form{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+input, button{
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+input{
+    width: 300px;
+    border-bottom: 2px solid var(--cor03);
+    font-size: 20px;
+}
+
+button{
+    margin-left: 3px;
+    transition: all ease .7s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--cor03);
+    color: #fff;
+}
+
+
+ul{
+    margin: 20px auto;
+}
+
+li{
+    padding: 5px;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    text-transform: none;
+}
+
+.risco{
+    text-decoration: line-through;
+}
